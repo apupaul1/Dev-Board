@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --font-poppins: "Poppins", "sans-serif";
+        --color-blue: rgba(55, 82, 253, 0.2);
+      }
+    </style>
+</head>
+<body class="bg-[#F4F7FF] font-poppins">
+    <header class="py-5">
+        <div class="w-11/12 mx-auto navbar rounded-md shadow-sm bg-[#FFFFFF]">
+          <div class="ml-3 navbar-start space-x-3">
+            <div class="w-10">
+              <img class="w-full" src="./assets/logo.png" alt="" />
+            </div>
+            <p class="text-3xl font-light">Dev<span class="text-3xl font-bold">Board</span></p>
+          </div>
+  
+          <div class="navbar-end flex gap-5">
+            <div class="cursor-pointer">
+                <button id="back-btn" class="bg-[#3752FD] rounded-md text-white mr-6 p-3 btn">
+                    Back to Desk
+                  </button>
+            </div>
+
+        </div>
+      </header>
+      <main>
+        <section class="w-11/12 mx-auto flex flex-col gap-7 pb-5">
+            <div class="bg-[#FFFFFF] p-6 space-y-4 rounded-md">
+                <h1 class="font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <hr>
+                <p>There are 5 ways to select an element in the DOM. <br>
+                    1.document.getElementByTagName <br>
+                    2.document.getElementById <br>
+                    3.document.querySelector <br>
+                    4.document.querySelectorAll <br>
+                    5.document.getElementsByClassName <br>
+                </p>
+            </div>
+            <div class="bg-[#FFFFFF] p-6 space-y-4 rounded-md">
+                <h1 class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                <hr>
+                <p> innerHTML get or set a block of html inside of a element, innerText  get or set the text inside of a tag, innerContent</p>
+            </div>
+            <div class="bg-[#FFFFFF] p-6 space-y-4 rounded-md">
+                <h1 class="font-bold">Question-3: What is event delegation in the DOM?</h1>
+                <hr>
+                <p>Event delegation is a method where a parent element handle events for its child elements. Instead of adding event listeners to every child, just applied once to the parent</p>
+            </div>
+            <div class="bg-[#FFFFFF] p-6 space-y-4 rounded-md">
+                <h1 class="font-bold">Question-4: What is event bubbling in the DOM?</h1>
+                <hr>
+                <p>Event bubbling is when an event on a child element "bubbles up" through its parent elements in the DOM tree</p>
+            </div>
+            <div class="bg-[#FFFFFF] p-6 space-y-4 rounded-md">
+                <h1 class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                <hr>
+                <p>For Creating
+                    document.createElement(); <br>
+                    For Adding
+                    document.body.appendChild(); <br>
+                    For Removing
+                    document.body.removeChild();
+                </p>
+            </div>
+        </section>
+      </main>
+      <script src="./Scripts/main.js"></script>
+</body>
+</html>
